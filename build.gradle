@@ -26,3 +26,9 @@ compileKotlin2Js.kotlinOptions {
     moduleKind = "commonjs"
     outputFile = "functions/index.js"
 }
+import org.apache.tools.ant.taskdefs.condition.Os
+
+task deploy(type:Exec, dependsOn: 'build') {
+    def firebaseExecutable = Os.isFamily(Os.FAMILY_WINDOWS) ? "firebase.cmd" : "firebase"
+    commandLine firebaseExecutable, "deploy"
+}
