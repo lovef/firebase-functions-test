@@ -1,1 +1,5 @@
-{}
+{
+  "projects": {
+    "test": "functions-test-fc4cd"
+  }
+}
