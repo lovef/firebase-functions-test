@@ -1,5 +1,6 @@
 {
   "projects": {
-    "test": "functions-test-fc4cd"
+    "test": "functions-test-fc4cd",
+    "default": "functions-test-fc4cd"
   }
 }
